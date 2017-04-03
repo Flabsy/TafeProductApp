@@ -38,6 +38,8 @@ namespace ProductApps
                 totalChargeTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
                 cProduct.TotalPayment += 5m;
                 totalWithWrapChargeTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
+                cProduct.TotalPayment = cProduct.TotalPayment * 1.1m;
+                totalWithGSTChargeTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
 
                 
             }
